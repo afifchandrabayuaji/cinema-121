@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Movie Detail | 121-Cinema</title>
+  </head>
+  <nav
+    class="flex sticky items-center justify-between flex-wrap bg-teal-500 p-6"
+  >
+    <div name="left-nav" class="text-white space-x-2">
+      <a href=""
+        ><span class="text-xl tracking-tight font-bold">121-Cinema</span></a
+      >
+      <!-- <span class="text-lg">Genres</span> -->
+    </div>
+    <div name="middle-nav">
+      <form action="search" method="get" class="flex-col">
+        <input
+          type="text"
+          name="searchBar"
+          placeholder="Search for Movie."
+          class="rounded padding pt-1 pb-1 pl-2 pr-2"
+        />
+        <input
+          type="submit"
+          value="Search"
+          class="rounded padding p-1 pl-2 pr-2 stroke white bg-teal-600 hover:bg-teal-800 text-white"
+        />
+      </form>
+    </div>
+    <div name="right-nav">
+      <a href=""
+        ><span class="text-white font-semibold text-xl tracking-tight">Login</span></a
+      >
+      <span class="text-white font-extralight text-xl">|</span>
+      <a href=""
+        ><span class="text-white font-semibold text-xl tracking-tight">Register</span></a
+      >
+    </div>
+  </nav>
+  <body>
+    <div
+      class="flex flex-wrap m-6 justify-center space-between"
+      name="body-div"
+    >
+      <div class="flex flex-row 2rem bg-teal-700" name="content-container">
+        <div class="flex flex-col" name="left-col">
+          <img
+            src="./img/BA_The_Animation.jpg"
+            alt="spinning-ayane-gif"
+            name="movie-poster"
+          />
+        </div>
+        <div class="flex flex-col" name="right-col">
+          <div class="bg-teal-600 p-3 shadow-sm pt-6 pb-6" name="header-part">
+            <p class="font-bold pl-6 text-3xl text-white" name="movie-title">
+              Blue Archive: The Animation
+            </p>
+          </div>
+          <div class="p-3 pt-6" name="footer-part">
+            <div class="text-xl font-bold pl-6 pb-5 text-white" name="rating-div">
+              <span name="rating-text"
+                >Rating:
+              </span>
+              <span class="pl-1" name="movie-rating">8</span>
+              <span name="/10"> / 10</span>
+            </div>
+            <p class="mb-4 pl-6 pr-6 text-white">
+              In Kivotos, a massive metropolis governed by multiple schools, one
+              academy is put under threat of being shut down forever, however,
+              an advisor of the newly formed General Student Council, seeks to
+              restore the school's reputation.
+            </p>
+            <div class="flex mb-2 pl-6 pr-6 gap-2" name="footer-part-movie-genre">
+              <button
+                class="rounded-full inline-block bg-gray-200 hover:bg-gray-400 px-3 py-1 font-semibold"
+              >
+                Action
+              </button>
+              <button
+                class="rounded-full inline-block bg-gray-200 hover:bg-gray-400 px-3 py-1 font-semibold"
+              >
+                Comedy
+              </button>
+              <button
+                class="rounded-full inline-block bg-gray-200 hover:bg-gray-400 px-3 py-1 font-semibold"
+              >
+                Thriller
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+export const baseUrl = "https://121-cinema.scribblehaus.site/"

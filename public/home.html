@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Home | 121-Cinema</title>
+  </head>
+  <nav
+    class="flex sticky items-center justify-between flex-wrap bg-teal-500 p-6"
+  >
+    <div name="left-nav" class="text-white space-x-2">
+      <a href=""
+        ><span class="text-xl tracking-tight font-bold">121-Cinema</span></a
+      >
+      <!-- <span class="text-lg">Genres</span> -->
+    </div>
+    <div name="middle-nav">
+      <form action="search" method="get" class="flex-col">
+        <input
+          type="text"
+          name="searchBar"
+          placeholder="Search for Movie."
+          class="rounded padding pt-1 pb-1 pl-2 pr-2"
+        />
+        <input
+          type="submit"
+          value="Search"
+          class="rounded padding p-1 pl-2 pr-2 stroke white bg-teal-600 hover:bg-teal-800 text-white"
+        />
+      </form>
+    </div>
+    <div name="right-nav">
+      <a href=""
+        ><span class="text-white font-semibold text-xl tracking-tight"
+          >Login</span
+        ></a
+      >
+      <span class="text-white font-extralight text-xl">|</span>
+      <a href=""
+        ><span class="text-white font-semibold text-xl tracking-tight"
+          >Register</span
+        ></a
+      >
+    </div>
+  </nav>
+  <body class="flex-col">
+    <div class="flex flex-row justify-between">
+      <div class="flex items-center gap-2">
+        <span class="p-6 pb-8 font-bold">Filter: </span>
+        <button
+          class="p-2 pt-1 rounded-full bg-gray-200 hover:bg-gray-400 font-semibold"
+        >
+          Action
+        </button>
+        <button
+          class="p-2 pt-1 rounded-full bg-gray-200 hover:bg-gray-400 font-semibold"
+        >
+          Thriller
+        </button>
+        <button
+          class="p-2 pt-1 rounded-full bg-gray-200 hover:bg-gray-400 font-semibold"
+        >
+          Drama
+        </button>
+        <button
+          class="p-2 pt-1 rounded-full bg-gray-200 hover:bg-gray-400 font-semibold"
+        >
+          Comedy
+        </button>
+      </div>
+
+      <div class="flex">
+        <span class="p-6 font-bold">Sort By: </span>
+        <select
+          class="rounded pl-3 pr-5 pb-1 bg-gray-200 hover:bg-gray-400"
+          name="sort"
+        >
+          <option value="Newest">Newest</option>
+          <option value="Oldest">Oldest</option>
+        </select>
+      </div>
+    </div>
+    <div class="flex flex-wrap p-6 gap-5" name="body-div">
+      <div
+        class="rounded shadow-lg hover:shadow-2xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 ease-linear"
+        name="card-1"
+      >
+        <img class="w-full" src="./img/Ayane_Icon.png" alt="" name="card-img" />
+        <div class="px-6 py-4" name="card-body">
+          <span
+            class="font-bold text-xl hover:underline hover:underline"
+            name="card-title"
+            >This is Ayane.</span
+          >
+          <p class="text-gray-800" name="card-subtitle">This is Ayane.</p>
+        </div>
+        <div class="px-6 pt-4 pb-2" name="card-footer">
+          <button
+            class="rounded-full inline-block bg-gray-200 hover:bg-gray-400 px-3 py-1 font-semibold"
+          >
+            Action
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="rounded shadow-lg hover:shadow-2xl pb-4 overflow-auto transform hover:-translate-y-2 transition-all duration-300 ease-linear"
+        name="card-4"
+      >
+        <div class="flex justify-center" name="card-header">
+          <img
+            class=""
+            src="./img/BA_The_Animation.jpg"
+            alt=""
+            name="card-img"
+          />
+        </div>
+        <div class="px-6 py-4" name="card-body">
+          <span
+            class="font-bold text-xl hover:underline hover:underline"
+            name="card-title"
+            >Blue Archive: The Animation.</span
+          >
+          <p class="text-gray-800" name="card-subtitle">
+            In Kivotos, a massive metropolis governed by multiple schools, one
+            academy is put under threat of being shut down forever, however, an
+            advisor of the newly formed General Student Council, seeks to
+            restore the school's reputation.
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2" name="card-footer">
+          <button
+            class="rounded-full inline-block bg-gray-200 hover:bg-gray-400 px-3 py-1 font-semibold"
+          >
+            Action
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="rounded shadow-lg hover:shadow-2xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 ease-linear"
+        name="card-2"
+      >
+        <img
+          class="w-full"
+          src="./img/Blue_Archive_logo_JP.png"
+          alt=""
+          name="card-img"
+        />
+        <div class="px-6 py-4" name="card-body">
+          <span class="font-bold text-xl hover:underline" name="card-title">
+            This is the second box title.</span
+          >
+          <p class="text-gray-800" name="card-subtitle">
+            This is the second box subtitle.
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2" name="card-footer">
+          <button
+            class="rounded-full inline-block bg-gray-200 hover:bg-gray-400 px-3 py-1 font-semibold"
+          >
+            Drama
+          </button>
+        </div>
+      </div>
+
+      <div
+        class="h-64 rounded shadow-lg hover:shadow-2xl overflow-hidden transform hover:-translate-y-2 transition-all duration-300 ease-linear"
+        name="card-3"
+      >
+        <img
+          class="object-fill"
+          src="./img/Ayane_Portrait.png"
+          alt=""
+          name="card-img"
+        />
+        <div class="px-6 py-4" name="card-body">
+          <span class="font-bold text-xl hover:underline" name="card-title"
+            >This is Ayane.</span
+          >
+          <p class="text-gray-800" name="card-subtitle">This is Ayane.</p>
+        </div>
+        <div class="px-6 pt-4 pb-2" name="card-footer">
+          <button
+            class="rounded-full inline-block bg-gray-200 hover:bg-gray-400 px-3 py-1 font-semibold"
+          >
+            Comedy
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row justify-center gap-5 mt-6" name="paginate-div">
+      <button
+        class="rounded padding p-1 pl-2 pr-2 stroke white bg-teal-500 hover:bg-teal-700 text-white"
+      >
+        Prev
+      </button>
+      <button
+        class="rounded padding p-1 pl-2 pr-2 stroke white bg-teal-500 hover:bg-teal-700 text-white"
+      >
+        Next
+      </button>
+    </div>
+  </body>
+</html>
