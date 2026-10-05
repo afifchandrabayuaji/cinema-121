@@ -1,4 +1,4 @@
-import BaseLayout from './layout/baseLayout'
+import BaseLayout from './layout/BaseLayout'
 import HomePage from './views/homePage'
 import LoginPage from './views/loginPage'
 import DetailPage from './views/detailPage'
