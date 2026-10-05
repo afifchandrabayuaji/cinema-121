@@ -1,5 +1,5 @@
-import Card from '../components/card';
-import Paginate from '../components/pagination';
+import Card from '../components/Card';
+// import Paginate from '../components/pagination';
 import { useState, useEffect } from "react";
 import axios from 'axios';
 
