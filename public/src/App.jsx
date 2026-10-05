@@ -18,7 +18,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/user/login" element={<LoginPage />} />
+          {/* <Route path="/user/login" element={<LoginPage />} /> */}
           <Route element={<BaseLayout />} >
             <Route path="/pub/movie" element={<HomePage />} />
             <Route path='/pub/movie/:id' element={<DetailPage />} />

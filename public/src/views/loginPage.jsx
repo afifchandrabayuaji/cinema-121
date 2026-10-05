@@ -12,9 +12,9 @@ export default function LoginPage({setPage}) {
         setPage("home");
     }
 
-    if(!localStorage.access.token){
+    // if(!localStorage.access.token){
         
-    }
+    // }
 
     return (
         <LoginForm />
